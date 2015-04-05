@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>C4DF9775-8C5F-4C40-9120-443BC3002A9A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>singleviewtest2</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0A9942CE47B6A2538E52AC68B505F86DE484244E</key>
+		<string>github.com:ustun/mvc-vs-react.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>singleviewtest2.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0A9942CE47B6A2538E52AC68B505F86DE484244E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:ustun/mvc-vs-react.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0A9942CE47B6A2538E52AC68B505F86DE484244E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0A9942CE47B6A2538E52AC68B505F86DE484244E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>singleviewtest2</string>
+		</dict>
+	</array>
+</dict>
+</plist>
