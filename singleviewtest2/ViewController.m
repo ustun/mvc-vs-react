@@ -9,6 +9,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameOutput;
 @property (weak, nonatomic) IBOutlet UIButton *incrementButton;
 @property (weak, nonatomic) IBOutlet UIButton *decrementButton;
+
+// Model (or state variables)
 @property (strong) Counters *counters;
 @property (strong) NSString *name;
 
@@ -27,9 +29,7 @@
     [self render];
 }
 
-- (void)initCounters {
-    self.counters = [[Counters alloc] init];
-}
+
 
 - (IBAction)handleEditingChanged:(id)sender {
     self.name = [(UITextField*)sender text];
@@ -64,10 +64,20 @@
     [self renderSelf];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
+- (void)initCounters {
+    self.counters = [[Counters alloc] init];
+}
+
+- (void)setInitialState {
+    
     [self initCounters];
     self.name = @"Ustun Ozgur";
+    
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    [self setInitialState];
     [self render];
 }
 
