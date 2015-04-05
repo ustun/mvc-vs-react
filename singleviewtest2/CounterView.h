@@ -14,8 +14,5 @@
 @property (strong) NSNumber *counter;
 @property (strong) NSString *inputText;
 
-//- (void)setInputText:(NSString*)text setCounter:(NSNumber*)counter;
-- (void)setProps:(NSDictionary*)props;
-- (void) render;
 
 @end

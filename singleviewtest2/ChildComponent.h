@@ -3,5 +3,6 @@
 @interface ChildComponent: UIView
 
 -(void)setProps:(NSDictionary*)props;
+- (void) render;
 
 @end
