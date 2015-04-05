@@ -15,7 +15,7 @@
 		C05F565D1AD149E600865C2F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C05F565B1AD149E600865C2F /* LaunchScreen.xib */; };
 		C05F56691AD149E600865C2F /* singleviewtest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F56681AD149E600865C2F /* singleviewtest2Tests.m */; };
 		C05F56731AD1557000865C2F /* Counters.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F56721AD1557000865C2F /* Counters.m */; };
-		C0BBF4351AD1863800B5D7C2 /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBF4341AD1863800B5D7C2 /* CounterView.m */; };
+		C0BBF43A1AD18DC900B5D7C2 /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBF4391AD18DC900B5D7C2 /* CounterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,8 +44,8 @@
 		C05F56681AD149E600865C2F /* singleviewtest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = singleviewtest2Tests.m; sourceTree = "<group>"; };
 		C05F56721AD1557000865C2F /* Counters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Counters.m; sourceTree = "<group>"; };
 		C05F56741AD1558600865C2F /* Counters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Counters.h; sourceTree = "<group>"; };
-		C0BBF4331AD1863800B5D7C2 /* CounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CounterView.h; path = ../CounterView.h; sourceTree = "<group>"; };
-		C0BBF4341AD1863800B5D7C2 /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CounterView.m; path = ../CounterView.m; sourceTree = "<group>"; };
+		C0BBF4381AD18DC900B5D7C2 /* CounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterView.h; sourceTree = "<group>"; };
+		C0BBF4391AD18DC900B5D7C2 /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,10 +87,10 @@
 		C05F564B1AD149E600865C2F /* singleviewtest2 */ = {
 			isa = PBXGroup;
 			children = (
-				C0BBF4331AD1863800B5D7C2 /* CounterView.h */,
-				C0BBF4341AD1863800B5D7C2 /* CounterView.m */,
 				C05F56501AD149E600865C2F /* AppDelegate.h */,
 				C05F56511AD149E600865C2F /* AppDelegate.m */,
+				C0BBF4381AD18DC900B5D7C2 /* CounterView.h */,
+				C0BBF4391AD18DC900B5D7C2 /* CounterView.m */,
 				C05F56531AD149E600865C2F /* ViewController.h */,
 				C05F56541AD149E600865C2F /* ViewController.m */,
 				C05F56721AD1557000865C2F /* Counters.m */,
@@ -233,7 +233,7 @@
 				C05F56551AD149E600865C2F /* ViewController.m in Sources */,
 				C05F56521AD149E600865C2F /* AppDelegate.m in Sources */,
 				C05F564F1AD149E600865C2F /* main.m in Sources */,
-				C0BBF4351AD1863800B5D7C2 /* CounterView.m in Sources */,
+				C0BBF43A1AD18DC900B5D7C2 /* CounterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
