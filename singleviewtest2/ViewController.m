@@ -20,7 +20,6 @@
     [self render];
 }
 
-
 - (IBAction)handleDecrementClick:(id)sender {
     [self.counters decrement];
     [self render];
@@ -30,15 +29,18 @@
     self.counters = [[Counters alloc] init];
 }
 
-- (void)propogateValuesToChildren {
+- (void)setPropsOnChildren {
     
-    [self.counterView1 setInputText:[self.input text] setCounter:self.counters.counter1];
-    [self.counterView2 setInputText:[self.input text] setCounter:self.counters.counter2];
+    [self.counterView1 setProps:@{@"inputText": self.input.text,
+                                  @"counter": self.counters.counter1}];
+    
+    [self.counterView2 setProps:@{@"inputText": self.input.text,
+                                  @"Counter": self.counters.counter2}];
     
 }
 
 - (void)renderChildren {
-    
+    [self setPropsOnChildren];
     [self.counterView1 render];
     [self.counterView2 render];
 }
@@ -49,11 +51,8 @@
 }
 
 - (void) render {
-    
-    [self propogateValuesToChildren];
     [self renderChildren];
     [self renderSelf];
-    
 }
 
 - (void)viewDidLoad {
@@ -62,9 +61,5 @@
     [self render];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

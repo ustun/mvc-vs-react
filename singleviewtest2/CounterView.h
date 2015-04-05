@@ -7,13 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ChildComponent.h"
 
-@interface CounterView : UIView
+@interface CounterView : ChildComponent
 
 @property (strong) NSNumber *counter;
 @property (strong) NSString *inputText;
 
-- (void)setInputText:(NSString*)text setCounter:(NSNumber*)counter;
+//- (void)setInputText:(NSString*)text setCounter:(NSNumber*)counter;
+- (void)setProps:(NSDictionary*)props;
 - (void) render;
 
 @end

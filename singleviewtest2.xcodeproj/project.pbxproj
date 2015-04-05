@@ -16,6 +16,7 @@
 		C05F56691AD149E600865C2F /* singleviewtest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F56681AD149E600865C2F /* singleviewtest2Tests.m */; };
 		C05F56731AD1557000865C2F /* Counters.m in Sources */ = {isa = PBXBuildFile; fileRef = C05F56721AD1557000865C2F /* Counters.m */; };
 		C0BBF43A1AD18DC900B5D7C2 /* CounterView.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBF4391AD18DC900B5D7C2 /* CounterView.m */; };
+		C0BBF43C1AD1980E00B5D7C2 /* ChildComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = C0BBF43B1AD1980E00B5D7C2 /* ChildComponent.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		C05F56741AD1558600865C2F /* Counters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Counters.h; sourceTree = "<group>"; };
 		C0BBF4381AD18DC900B5D7C2 /* CounterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CounterView.h; sourceTree = "<group>"; };
 		C0BBF4391AD18DC900B5D7C2 /* CounterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CounterView.m; sourceTree = "<group>"; };
+		C0BBF43B1AD1980E00B5D7C2 /* ChildComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChildComponent.m; sourceTree = "<group>"; };
+		C0BBF43D1AD1985400B5D7C2 /* ChildComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChildComponent.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				C05F56511AD149E600865C2F /* AppDelegate.m */,
 				C0BBF4381AD18DC900B5D7C2 /* CounterView.h */,
 				C0BBF4391AD18DC900B5D7C2 /* CounterView.m */,
+				C0BBF43B1AD1980E00B5D7C2 /* ChildComponent.m */,
+				C0BBF43D1AD1985400B5D7C2 /* ChildComponent.h */,
 				C05F56531AD149E600865C2F /* ViewController.h */,
 				C05F56541AD149E600865C2F /* ViewController.m */,
 				C05F56721AD1557000865C2F /* Counters.m */,
@@ -229,6 +234,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0BBF43C1AD1980E00B5D7C2 /* ChildComponent.m in Sources */,
 				C05F56731AD1557000865C2F /* Counters.m in Sources */,
 				C05F56551AD149E600865C2F /* ViewController.m in Sources */,
 				C05F56521AD149E600865C2F /* AppDelegate.m in Sources */,
