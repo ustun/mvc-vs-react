@@ -9,6 +9,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *nameOutput;
 @property (weak, nonatomic) IBOutlet UIButton *incrementButton;
 @property (weak, nonatomic) IBOutlet UIButton *decrementButton;
+@property (weak, nonatomic) IBOutlet UILabel *counterValues;
 
 // Model (or state variables)
 @property (strong) Counters *counters;
@@ -28,7 +29,6 @@
     [self.counters decrement];
     [self render];
 }
-
 
 
 - (IBAction)handleEditingChanged:(id)sender {
@@ -57,6 +57,10 @@
     self.decrementButton.enabled = [self.counters canDecrement];
     self.input.text = self.name;
     self.nameOutput.text = [NSString stringWithFormat:@"Your name is: %@", self.name];
+    
+    self.counterValues.text = [NSString stringWithFormat:@"Counter 1 value: %d and Counter 2 value: %d",
+                               self.counters.counter1.intValue,
+                               self.counters.counter2.intValue];
 }
 
 - (void) render {
