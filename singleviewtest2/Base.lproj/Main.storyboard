@@ -53,6 +53,9 @@
                                 <rect key="frame" x="244" y="387" width="340" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="handleEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="djb-Aj-2Ii"/>
+                                </connections>
                             </textField>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bQs-pc-dAr" customClass="CounterView">
                                 <rect key="frame" x="28" y="213" width="521" height="115"/>
@@ -70,6 +73,12 @@
                                     <outlet property="label" destination="4wy-f6-EV5" id="NXk-8M-ZMI"/>
                                 </connections>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rTK-da-M5T">
+                                <rect key="frame" x="52" y="487" width="329" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -79,6 +88,7 @@
                         <outlet property="decrementButton" destination="jCf-1K-qYE" id="1ds-AU-ycd"/>
                         <outlet property="incrementButton" destination="PfU-wQ-S4h" id="2Ez-vV-bbn"/>
                         <outlet property="input" destination="CIs-dL-byB" id="j8d-7N-PeI"/>
+                        <outlet property="nameOutput" destination="rTK-da-M5T" id="ZWY-ah-Ll2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

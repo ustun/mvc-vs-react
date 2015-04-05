@@ -6,9 +6,11 @@
 @property (weak, nonatomic) IBOutlet CounterView *counterView1;
 @property (weak, nonatomic) IBOutlet CounterView *counterView2;
 @property (weak, nonatomic) IBOutlet UITextField *input;
+@property (weak, nonatomic) IBOutlet UILabel *nameOutput;
 @property (weak, nonatomic) IBOutlet UIButton *incrementButton;
 @property (weak, nonatomic) IBOutlet UIButton *decrementButton;
 @property (strong) Counters *counters;
+@property (strong) NSString *name;
 
 @end
 
@@ -29,12 +31,17 @@
     self.counters = [[Counters alloc] init];
 }
 
+- (IBAction)handleEditingChanged:(id)sender {
+    self.name = [(UITextField*)sender text];
+    [self render];
+}
+
 - (void)setPropsOnChildren {
     
-    [self.counterView1 setProps:@{@"inputText": self.input.text,
+    [self.counterView1 setProps:@{@"inputText": self.name,
                                   @"counter": self.counters.counter1}];
     
-    [self.counterView2 setProps:@{@"inputText": self.input.text,
+    [self.counterView2 setProps:@{@"inputText": self.name,
                                   @"Counter": self.counters.counter2}];
     
 }
@@ -48,6 +55,8 @@
 - (void)renderSelf {
     self.incrementButton.enabled = [self.counters canIncrement];
     self.decrementButton.enabled = [self.counters canDecrement];
+    self.input.text = self.name;
+    self.nameOutput.text = [NSString stringWithFormat:@"Your name is: %@", self.name];
 }
 
 - (void) render {
@@ -58,6 +67,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initCounters];
+    self.name = @"Ustun Ozgur";
     [self render];
 }
 
